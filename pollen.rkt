@@ -15,7 +15,7 @@
   (provide (all-defined-out))
   (define poly-targets '(html txt)))
  
-(define (baseurl) "ctittel.com")
+(define (baseurl) "https://ctittel.com")
 
 (define (get-date)
   (date->iso8601 (today)))
