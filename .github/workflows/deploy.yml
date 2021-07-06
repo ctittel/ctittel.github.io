@@ -1,0 +1,33 @@
+name: Build and Deploy to Github Pages
+
+on:
+  push:
+    branches:
+      - main
+      
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 📂 Checkout repository
+      uses: actions/checkout@master
+    - name: Checkout build branch
+      run : |
+        git fetch
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git checkout build
+        git merge main
+    - uses: Bogdanp/setup-racket@v1.5
+      with:
+        architecture: 'x64'
+        distribution: 'full'
+        variant: 'CS'
+        version: '8.1'
+        packages: 'pollen, gregor, sugar, scribble, txexpr' # must be a comma-separated string!
+    - run: raco pollen render
+    - name: Build and Deploy
+      run: |
+        git add -A
+        git commit -m "update"
+        git push origin build
