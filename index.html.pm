@@ -1,4 +1,4 @@
-#lang pollen
+#lang pollen/markup
 ◊define-meta[title]{Index}
 
 ◊h1{Welcome to my personal site!}
