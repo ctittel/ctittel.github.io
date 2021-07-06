@@ -23,9 +23,13 @@ jobs:
         variant: 'CS'
         version: '8.1'
         packages: 'pollen, gregor, sugar, txexpr' # must be a comma-separated string!
-    - run: raco pollen render
+    - run: |
+        rm -r .github
+        rm .gitignore
+        raco pollen render
+        raco pollen publish . ~/build
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
         branch: build # The branch the action should deploy to.
-        folder: . # The folder the action should deploy.
+        folder: ~/build # The folder the action should deploy.
