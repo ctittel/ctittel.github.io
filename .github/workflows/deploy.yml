@@ -11,13 +11,11 @@ jobs:
     steps:
     - name: 📂 Checkout repository
       uses: actions/checkout@master
-    - name: Checkout build branch
+    - name: Checkout source
       run : |
         git fetch
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git checkout build
-        git merge main
     - uses: Bogdanp/setup-racket@v1.5
       with:
         architecture: 'x64'
@@ -26,8 +24,8 @@ jobs:
         version: '8.1'
         packages: 'pollen, gregor, sugar, txexpr' # must be a comma-separated string!
     - run: raco pollen render
-    - name: Build and Deploy
-      run: |
-        git add -A
-        git commit -m "update"
-        git push origin build
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@4.1.4
+      with:
+        branch: build # The branch the action should deploy to.
+        folder: . # The folder the action should deploy.
