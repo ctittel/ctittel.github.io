@@ -24,7 +24,7 @@ jobs:
         distribution: 'full'
         variant: 'CS'
         version: '8.1'
-        packages: 'pollen, gregor, sugar, scribble, txexpr' # must be a comma-separated string!
+        packages: 'pollen, gregor, sugar, txexpr' # must be a comma-separated string!
     - run: raco pollen render
     - name: Build and Deploy
       run: |
