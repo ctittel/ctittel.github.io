@@ -2,13 +2,13 @@
 (require  txexpr 
           gregor 
           gregor/time
-          hyphenate
           pollen/decode
           pollen/tag
           pollen/file
           sugar
           scribble/base
           racket/path)
+          ;;; hyphenate
 (provide (all-defined-out))
  
 (module setup racket/base
