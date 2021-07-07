@@ -26,7 +26,7 @@
 
 	<div class="site-info">
 		<h1 class="site-name">
-			<a href="◊(baseurl)/"  ◊(if (equal? "Index" (hash-ref metas 'title )) "class=\"active\"" "" )>◊(baseurl)</a>
+			<a href="◊(baseurl)/"  ◊(if (equal? "Index" (hash-ref metas 'title )) "class=\"active\"" "" )>ctittel.com</a>
 		</h1>
 		◊; <p class="site-description">Christoph Tittel</p>
 	</div>
@@ -47,9 +47,9 @@
 
 <footer class="site-footer">
     <div class="credits">
-    &copy; ◊(get-date) &nbsp;&nbsp;Christoph Tittel
+    &copy; 2020-◊(print-year) &nbsp;&nbsp;Christoph Tittel
     <br><br>
-    Last updated on ◊(get-date) at ◊(get-time) (Timezone: ◊(get-timezone))
+    Last built: ◊(print-datetime)
   </div>  
 </footer>
 </html>
