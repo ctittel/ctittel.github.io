@@ -3,7 +3,7 @@
 
 ◊h1{Welcome to my personal site!}
 
-Links:
+◊h2{Links:}
 
 ◊ul{
     ◊li{◊hyperlink["https://linkedin.com/in/ctittel"]{LinkedIn}}

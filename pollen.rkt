@@ -17,20 +17,20 @@
 
 (provide (all-from-out "settings.rkt"))
 
-;;; (include "settings.rkt")
-
 (provide (all-defined-out))
  
 (module setup racket/base
   (provide (all-defined-out))
   (define poly-targets '(html txt)))
 
+;; --- date & time
+;; https://docs.racket-lang.org/gregor/time-format.html
 (define (print-year)
   (~t (now) "yyyy"))
 
-;; https://docs.racket-lang.org/gregor/time-format.html
 (define (print-datetime)
   (~t (now/moment) "yyyy-MM-dd kk:mm:ss z"))
+;; ---
 
 (define (heading . elements)
   (txexpr 'h2 empty elements))
@@ -40,6 +40,3 @@
 
 (define (hyperlink url elements)
   `(a [[href ,url]] ,elements))
-
-(define (test) 
-    (if (environment-variables? "DEBUG") "it is set" "Not set"))
