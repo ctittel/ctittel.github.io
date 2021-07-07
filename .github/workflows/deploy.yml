@@ -18,11 +18,11 @@ jobs:
         git config --local user.name "GitHub Action"
     # Caching is not compatible with setup-racket right now
     # Issue: https://github.com/Bogdanp/setup-racket/issues/38
-    # - name: Cache Racket dependencies
-    #   uses: actions/cache@v2
-    #   with:
-    #     path: /opt/racket
-    #     key: ${{ runner.os }}-racket
+    - name: Cache Racket dependencies
+      uses: actions/cache@v2
+      with:
+        path: /opt/racket
+        key: ${{ runner.os }}-racket
     - name: Install Racket & dependencies 
       uses: Bogdanp/setup-racket@v1.5
       with:
