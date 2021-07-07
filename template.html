@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>◊(hash-ref metas 'title) - ctittel.com</title>
+  <title>◊(hash-ref metas 'title) - ◊(website-name)</title>
   <meta charset="utf-8">
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -26,7 +26,7 @@
 
 	<div class="site-info">
 		<h1 class="site-name">
-			<a href="◊(baseurl)/"  ◊(if (equal? "Index" (hash-ref metas 'title )) "class=\"active\"" "" )>ctittel.com</a>
+			<a href="◊(baseurl)/"  ◊(if (equal? "Index" (hash-ref metas 'title )) "class=\"active\"" "" )>◊(website-name)</a>
 		</h1>
 		◊; <p class="site-description">Christoph Tittel</p>
 	</div>
