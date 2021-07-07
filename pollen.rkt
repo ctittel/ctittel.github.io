@@ -17,20 +17,12 @@
  
 (define (baseurl) "https://ctittel.com")
 
-(define (get-date)
-  (date->iso8601 (today)))
+(define (print-year)
+  (~t (now) "yyyy"))
 
-(define (get-time)
-  (time->iso8601 (current-time)))
-
-(define (get-timezone)
-  (current-timezone))
-  ;;; (datetime->iso8601 (now))
- 
-;;; (set! date-display-format 'iso-8601)
-
-;;; (define (get-time)
-;;;   (date->string (current-date) (current-seconds)))
+;; https://docs.racket-lang.org/gregor/time-format.html
+(define (print-datetime)
+  (~t (now/moment) "yyyy-MM-dd kk:mm:ss z"))
 
 (define (heading . elements)
   (txexpr 'h2 empty elements))
