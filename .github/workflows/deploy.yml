@@ -16,16 +16,18 @@ jobs:
         git fetch
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-    - name: Cache Racket dependencies
-      uses: actions/cache@v2
-      with:
-        path: /opt/racket
-        key: ${{ runner.os }}-racket
+    # Caching is not compatible with setup-racket right now
+    # Issue: https://github.com/Bogdanp/setup-racket/issues/38
+    # - name: Cache Racket dependencies
+    #   uses: actions/cache@v2
+    #   with:
+    #     path: /opt/racket
+    #     key: ${{ runner.os }}-racket
     - name: Install Racket & dependencies 
       uses: Bogdanp/setup-racket@v1.5
       with:
         architecture: 'x64'
-        distribution: 'full'
+        distribution: 'minimal' # 'full'
         variant: 'CS'
         version: '8.1'
         packages: 'pollen, gregor, sugar, txexpr' # must be a comma-separated string!
