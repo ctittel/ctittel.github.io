@@ -1,5 +1,7 @@
-#lang racket/base
-(require  txexpr 
+#lang racket
+(require  racket/include
+          racket/require
+          txexpr 
           gregor 
           gregor/time
           pollen/decode
@@ -7,15 +9,21 @@
           pollen/file
           sugar
           scribble/base
-          racket/path)
+          racket/path
+          "settings.rkt")
           ;;; hyphenate
+
+(require (only-in racket/base environment-variables? ))
+
+(provide (all-from-out "settings.rkt"))
+
+;;; (include "settings.rkt")
+
 (provide (all-defined-out))
  
 (module setup racket/base
   (provide (all-defined-out))
   (define poly-targets '(html txt)))
- 
-(define (baseurl) "https://ctittel.com")
 
 (define (print-year)
   (~t (now) "yyyy"))
@@ -32,3 +40,6 @@
 
 (define (hyperlink url elements)
   `(a [[href ,url]] ,elements))
+
+(define (test) 
+    (if (environment-variables? "DEBUG") "it is set" "Not set"))
