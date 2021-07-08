@@ -58,8 +58,8 @@
 
 <footer>
     <div class="credits">
-    &copy; 2020-◊(print-year) &nbsp;&nbsp;Christoph Tittel
-    <br><br>
+    &copy; Christoph Tittel&nbsp;2020-◊(print-year)
+    <br>
     Last built: ◊(print-datetime)
   </div>  
 </footer>

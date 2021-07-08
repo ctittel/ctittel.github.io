@@ -49,12 +49,12 @@ nav a:hover {
 
 footer {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    border-top: 1px solid #333;
+    border-top: 1px solid black;
+    /* color: grey; */
     margin-top: 50px;
     padding: 20px 0;
-    text-align: center
-}
-
-footer .credits {
-    font-size: 1rem
+    text-align: left;
+    font-size: 1rem;
+    /* background-color: black; */
+    height: 155px; /* .push must be the same height as .footer */
 }
