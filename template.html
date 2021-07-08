@@ -31,7 +31,14 @@
 		◊; <p class="site-description">Christoph Tittel</p>
 	</div>
 
-	◊; <nav>
+    ◊; ◊(->html (apply ul (for/list ([ii (nav-sites)]) (li ii))))
+  <nav>
+
+  ◊; ◊(for ([i (nav-sites)])
+  ◊;   "test"
+  ◊; )
+
+    ◊; ◊a[href=(i)]{i}
 	◊; {% for node in site.navbar %}
 	◊; 	{% if page.url == node.url %}
 	◊; 	<a class="active" href="{{node.url | prepend: site.baseurl}}">{{node.title}}</a>
@@ -39,7 +46,7 @@
 	◊; 	<a href="{{node.url | prepend: site.baseurl}}">{{node.title}}</a>
 	◊; 	{% endif %}
 	◊; {% endfor %}
-	◊; </nav>
+	</nav>
 </section>
 
 ◊(->html doc)
