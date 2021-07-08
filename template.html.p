@@ -31,8 +31,8 @@
 
   <nav>
   	<a href="◊(baseurl)/" id="site-avatar"><img src="◊(baseurl)/assets/logo.svg" /></a>
-    <a href="◊(baseurl)/" id="site-name">◊(website-name)</a>
-    <a href="google.com">Google</a>
+    <a href="◊(baseurl)/" id="site-name">Christoph Tittel</a>
+    ◊; <a href="google.com">Google</a>
     ◊; ◊(->html (apply ul (for/list ([ii (nav-sites)]) (li ii))))
   ◊; ◊(for ([i (nav-sites)])
   ◊;   "test"

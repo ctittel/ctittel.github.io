@@ -3,7 +3,10 @@
 
 ◊h1{Welcome to my personal site!}
 
-◊h2{Links:}
+◊h2{News}
+No news is good news ;)
+
+◊h2{Links}
 
 ◊ul{
     ◊li{◊hyperlink["https://linkedin.com/in/ctittel"]{LinkedIn}}
