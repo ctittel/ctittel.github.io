@@ -1,5 +1,8 @@
-Build command: `raco pollen render *.html`
+# ctittel.com
 
-- `render -p` for multiprocessing
-- `raco pollen publish <source> <dest>` to copy all non-pollen files to `<dest>`
-- set the env variable `DEBUG` to insert relative links and not absolute links for the assets
+Personal website, made with Racket / Pollen
+
+## Racket commands cheat sheet
+- Rendering everything: `raco pollen render -p` (`-p` for multiprocessing)
+- `raco pollen publish <source> <dest>` to copy all files not specific to Racket/Pollen to `<dest>`
+- DEBUG mode: set the env variable `DEBUG` to use local paths (for testing / debugging)
