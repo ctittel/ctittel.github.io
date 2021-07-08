@@ -6,7 +6,7 @@
   <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
-  ◊; <link rel="stylesheet" type="text/css" href="◊(baseurl)/css/fresh-adoc.css" />
+  ◊; <link rel="stylesheet" type="text/css" href="◊(baseurl)/css/layout.css" />
   <link rel="stylesheet" type="text/css" href="◊(baseurl)/css/style.css" />
   <link rel="shortcut icon" type="image/png" href="◊(baseurl)/assets/logo.svg">
 
@@ -21,19 +21,19 @@
 </head>
 
 <body>
-<section class="site-header">
-	<a href="◊(baseurl)/" class="site-avatar"><img src="◊(baseurl)/assets/logo.svg" /></a>
+<header>
 
-	<div class="site-info">
-		<h1 class="site-name">
-			<a href="◊(baseurl)/"  ◊(if (equal? "Index" (hash-ref metas 'title )) "class=\"active\"" "" )>◊(website-name)</a>
-		</h1>
-		◊; <p class="site-description">Christoph Tittel</p>
-	</div>
+	◊; <div class="site-info">
+	◊; 	<h1 class="site-name">
+	◊; 	</h1>
+	◊; 	◊; <p class="site-description">Christoph Tittel</p>
+	◊; </div>
 
-    ◊; ◊(->html (apply ul (for/list ([ii (nav-sites)]) (li ii))))
   <nav>
-
+  	<a href="◊(baseurl)/" id="site-avatar"><img src="◊(baseurl)/assets/logo.svg" /></a>
+    <a href="◊(baseurl)/" id="site-name">◊(website-name)</a>
+    <a href="google.com">Google</a>
+    ◊; ◊(->html (apply ul (for/list ([ii (nav-sites)]) (li ii))))
   ◊; ◊(for ([i (nav-sites)])
   ◊;   "test"
   ◊; )
@@ -47,12 +47,16 @@
 	◊; 	{% endif %}
 	◊; {% endfor %}
 	</nav>
-</section>
+</header>
 
+<div class="colmask fullpage">
+<div class="col1">
 ◊(->html doc)
+</div>
+</div>
 </body>
 
-<footer class="site-footer">
+<footer>
     <div class="credits">
     &copy; 2020-◊(print-year) &nbsp;&nbsp;Christoph Tittel
     <br><br>
