@@ -30,7 +30,9 @@
 	◊; </div>
 
   <nav>
-  	<a href="◊(baseurl)/" id="site-avatar"><img src="◊(baseurl)/assets/logo.svg" /></a>
+  	◊; <a href="◊(baseurl)/">
+    <img id="site-avatar" src="◊(baseurl)/assets/logo.svg" />
+    ◊; </a>
     <a href="◊(baseurl)/" id="site-name">Christoph Tittel</a>
     ◊; <a href="google.com">Google</a>
     ◊; ◊(->html (apply ul (for/list ([ii (nav-sites)]) (li ii))))
@@ -49,17 +51,15 @@
 	</nav>
 </header>
 
-<div class="colmask fullpage">
-<div class="col1">
+<article>
 ◊(->html doc)
-</div>
-</div>
+</article>
 </body>
 
 <footer>
     <div class="credits">
-    &copy; 2020-◊(print-year) &nbsp;&nbsp;Christoph Tittel
-    <br><br>
+    &copy; Christoph Tittel&nbsp;2020-◊(print-year)
+    <br>
     Last built: ◊(print-datetime)
   </div>  
 </footer>

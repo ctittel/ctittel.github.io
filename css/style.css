@@ -1,24 +1,22 @@
 html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    margin: 0 auto;
-    max-width:  90%; /* 1000px; */
+    margin: auto auto;
+    max-width:  80%; /* 1000px; */
     padding: 0 10px;
     width: 100%;
-    font-size: 18px;
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
-}
-
-body {
+    font-size: 20px;
+    /* font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Ubuntu Mono", "Liberation Mono", "Courier New", monospace; */
+    /* font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    background-color: #f7f7f7;  /*#fffff8;*/
 }
 
 /******** Header *************/
-
 nav {
     margin: 0;
     padding: 5px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid grey;
 }
 
 nav a {
@@ -41,20 +39,30 @@ nav a:hover {
     font-weight: bold;
 }
 
-#site-avatar img {
+#site-avatar {
     width: 30px;
+}
+
+/**** Body *****/
+h1 {
+    font-size: 3em;
+}
+
+article {
+    padding-top: 50px;
+    max-width: 1000px;
+    margin: auto auto;
 }
 
 /***** Footer *****/
 
 footer {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    border-top: 1px solid #333;
-    margin-top: 50px;
+    /* border-top: 1px solid grey; */
+    color: grey;
+    margin-top: 200px;
     padding: 20px 0;
-    text-align: center
-}
-
-footer .credits {
-    font-size: 1rem
+    text-align: left;
+    font-size: 1rem;
+    /* background-color: black; */
+    height: 155px; /* .push must be the same height as .footer */
 }
