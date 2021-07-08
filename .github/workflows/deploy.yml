@@ -35,7 +35,9 @@ jobs:
         version: '8.1'
         dest: '/opt/racket'
     - name: Install Dependencies
-      run: raco pkg install --auto --skip-installed pollen gregor sugar txexpr
+      run: |
+        raco pkg install --auto --skip-installed pollen gregor sugar txexpr
+        raco pkg update --all
     - name: Build website
       run: |
         rm -r .github
