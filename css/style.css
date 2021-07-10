@@ -80,3 +80,7 @@ footer {
     /* background-color: black; */
     height: 155px; /* .push must be the same height as .footer */
 }
+
+footer a {
+    color: grey;
+}
