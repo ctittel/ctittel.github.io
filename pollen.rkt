@@ -13,7 +13,7 @@
           "settings.rkt")
           ;;; hyphenate
 
-(require (only-in racket/base environment-variables? ))
+(require (only-in racket/base environment-variables? path->string ))
 
 (provide (all-from-out "settings.rkt"))
 
@@ -40,3 +40,5 @@
 
 (define (hyperlink url elements)
   `(a [[href ,url]] ,elements))
+
+(define (relative-source-of-file file) (get-source file))

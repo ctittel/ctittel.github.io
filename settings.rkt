@@ -5,4 +5,7 @@
 
 (define (website-name) "ctittel.com")
 
-(define (baseurl) (if (debug-mode) (current-directory)  "https://ctittel.com"))
+(define (baseurl) 
+    (if (debug-mode) 
+        (find-system-path 'orig-dir) ;(current-directory)  
+        "https://ctittel.com"))

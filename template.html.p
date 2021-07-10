@@ -61,6 +61,8 @@
     &copy; Christoph Tittel&nbsp;2020-◊(print-year)
     <br>
     Last built: ◊(print-datetime)
+    <br>
+    <a href=https://github.com/ctittel/ctittel.github.io/blob/main/◊(relative-source-of-file here)>Source and History of this page</a>
   </div>  
 </footer>
 </html>
