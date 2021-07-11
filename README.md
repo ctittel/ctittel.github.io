@@ -3,11 +3,11 @@
 Personal website, made with [Pollen (a Racket DSL)](https://docs.racket-lang.org/pollen/)
 
 ## TODO
-- Add sitemap
 - Add contents table to some pages
 - Add texts
 - Add SEO stuff
 - Maybe: Add tufte CSS
+- ~~Add sitemap~~
 
 ## Racket commands cheat sheet
 - Rendering everything: `raco pollen render -p` (`-p` for multiprocessing)

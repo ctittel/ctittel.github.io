@@ -7,6 +7,7 @@
           pollen/decode
           pollen/tag
           pollen/file
+          pollen/pagetree
           sugar
           scribble/base
           racket/path
@@ -42,3 +43,6 @@
   `(a [[href ,url]] ,elements))
 
 (define (relative-source-of-file file) (get-source file))
+
+(define (my-print-pagetree) 
+  (pagetree->list (current-pagetree)))
