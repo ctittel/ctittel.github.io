@@ -1,6 +1,13 @@
 # ctittel.com
 
-Personal website, made with Racket / Pollen
+Personal website, made with [Pollen (a Racket DSL)](https://docs.racket-lang.org/pollen/)
+
+## TODO
+- Add sitemap
+- Add contents table to some pages
+- Add texts
+- Add SEO stuff
+- Maybe: Add tufte CSS
 
 ## Racket commands cheat sheet
 - Rendering everything: `raco pollen render -p` (`-p` for multiprocessing)
