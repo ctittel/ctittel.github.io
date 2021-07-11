@@ -26,6 +26,10 @@ a:hover {
     text-align: justify;
 }
 
+pre, code {
+    font-family: Consolas, "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
+}
+
 /******** Header *************/
 nav {
     margin: 0;
