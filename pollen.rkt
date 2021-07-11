@@ -50,3 +50,5 @@
 
 (define (my-print-pagetree) 
   (pagetree->list (current-pagetree)))
+
+(define (lz) "◊")
