@@ -32,7 +32,7 @@
 (define (print-datetime)
   (string-append (~t (now/moment) "yyyy-MM-dd kk:mm:ss") " UTC" 
     (let ([x (~t (now/moment) "X")])
-      (if (eq? x "Z")
+      (if (or (eq? x "Z") (eq? x "Z "))
         "+00"
         x))))
 ;; ---
