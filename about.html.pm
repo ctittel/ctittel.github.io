@@ -9,7 +9,7 @@ For the domain name, I wanted a domain with only my surname (◊code{tittel}), b
 I also checked out some new gTLDs but ultimately decided against using one of these when I learned that less tech-savy people might not recognize a domain like ◊code{<something>.xyz} as a web address. 
 Also, apparently some e-mail providers and companies are more likely to flag e-mails coming from addresses with certain gTLDs as spam (certain new gTLDs are apparently used disproportionately often for sketchy purposes).}
 
-◊p[#:class "blocktext"]{My main priorities for the design of this website are:
+◊p[#:class "blocktext"]{My main priorities for this website are:
 ◊ul{
     ◊li{◊b{Simplicity of technology}: The tech used for the site must be so simple that I am able to understand every single little detail about it (the CSS sheets, any JavaScript, the HTML, etc.)}
     ◊li{◊b{Customizability}: If I get new ideas for the site, I want to be able to implement them with as little difficulty as possible.}
@@ -26,6 +26,8 @@ I let my Jekyll site run for a while, but was never completely satisfied with it
 
 ◊p[#:class "blocktext"]{At some point I learned about ◊hyperlink["https://docs.racket-lang.org/pollen/"]{Pollen} (it was likely on ◊hyperlink["https://news.ycombinator.com/"]{Hackernews}), a programming language written in ◊hyperlink["https://racket-lang.org/"]{Racket}. Racket is a ◊hyperlink["https://en.wikipedia.org/wiki/Lisp_(programming_language)"]{Lisp} dialect meant for designing other programming languages. Pollen is a publishing system (like LaTeX, but more general because it is not meant to produce only one output format like PDF) and a templating language (like Liquid, but much more powerful because it has all the features Lisp dialects typically have).
 A key idea behind Pollen is the realization that Lisp programs and files in XML-◊i{ish} languages have one big similarity: Both are trees. The ◊hyperlink["https://en.wikipedia.org/wiki/S-expression"]{S-expressions}, which are so typical for Lips dialects, can be mapped easily to XML-elements (and also LaTeX commands to some degree).
-Using Pollen as a templating language is as simple as inserting Pollen expressions beginning with the lozenge symbol (◊code{◊(lz)}) in any text file (the text format doesn't matter, be it TXT, HTML, CSS, Python, ...) or even into a binary file (e.g. PDF). Pollen will then "run" the file, evaluate all Pollen expressions ◊(lz) and create an output file where all Pollen expressions ◊(lz) are replaced with their corresponding output.
-It is easy to see how Pollen is thus much more universal and powerful than other templating languages, especially when considering that you have full access to the Racket libraries and Racket's metaprogramming capabilities. 
+Using Pollen as a templating language is as simple as inserting Pollen expressions beginning with the lozenge symbol (◊code{◊(lz)}) into any text file (the format of the text doesn't matter, be it TXT, HTML, CSS or even files containing code in another language like C++ or Python, ...) or even into a binary file (e.g. PDF). Pollen will then "run" the file, evaluate all Pollen ◊(lz)expressions and create an output file where all Pollen ◊(lz)expressions are replaced with their corresponding output.
+It is easy to see how Pollen is thus much more universal and powerful than other templating languages, especially when considering that you have full access to the Racket libraries and Racket's metaprogramming capabilities.
+After learning enough about Pollen and not finding an even more impressive alternative I have begun rewriting my website in Pollen.
+So far it is going very smooth and I'm currently much happier with Pollen than I ever was with Jekyll (but I'm arguably still in the notorious ◊i{honeymoon phase}). You can find the source code of this website at ◊hyperlink["https://github.com/ctittel/ctittel.github.io/"]{ctittel/ctittel.github.io}.
 }
