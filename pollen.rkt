@@ -30,7 +30,7 @@
   (~t (now) "yyyy"))
 
 (define (print-datetime)
-  (~t (now/moment) "yyyy-MM-dd kk:mm:ss z"))
+  (string-append (~t (now/moment) "yyyy-MM-dd kk:mm:ss") " UTC" (~t (now/moment) "X")))
 ;; ---
 
 (define (heading . elements)
