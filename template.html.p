@@ -33,7 +33,8 @@
   	◊; <a href="◊(baseurl)/">
     <img id="site-avatar" src="◊(baseurl)/assets/logo.svg" />
     ◊; </a>
-    <a href="◊(baseurl)/" id="site-name">Christoph Tittel</a>
+    <a href=◊(baseurl)index.html id="site-name">Christoph Tittel</a>
+    <a href=◊(baseurl)about.html>About</a>
     ◊; <a href="google.com">Google</a>
     ◊; ◊(->html (apply ul (for/list ([ii (nav-sites)]) (li ii))))
   ◊; ◊(for ([i (nav-sites)])

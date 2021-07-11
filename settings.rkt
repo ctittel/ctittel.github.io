@@ -8,4 +8,4 @@
 (define (baseurl) 
     (if (debug-mode) 
         (find-system-path 'orig-dir) ;(current-directory)  
-        "https://ctittel.com"))
+        "https://ctittel.com/"))
