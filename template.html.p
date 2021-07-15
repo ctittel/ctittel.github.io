@@ -9,15 +9,6 @@
   ◊; <link rel="stylesheet" type="text/css" href="◊(baseurl)/css/layout.css" />
   <link rel="stylesheet" type="text/css" href="◊(baseurl)/css/style.css" />
   <link rel="shortcut icon" type="image/png" href="◊(baseurl)/assets/logo.svg">
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153495508-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-153495508-1');
-  </script>
 </head>
 
 <body>
