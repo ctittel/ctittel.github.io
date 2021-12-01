@@ -10,27 +10,29 @@
   <link rel="shortcut icon" type="image/png" href="◊(baseurl)/assets/logo.svg">
 </head>
 
-<body>
-<header>
-  <nav>
-    <a href=◊(baseurl)/index.html id="site-name"><img id="site-avatar" src="◊(baseurl)/assets/logo.svg" /> Christoph Tittel</a>
-    <a href=◊(baseurl)/about.html>About</a>
-	</nav>
-</header>
+  <div class="flex-wrapper">
+    <body>
+      <header>
+        <nav>
+          <a href=◊(baseurl)/index.html id="site-name"><img id="site-avatar" src="◊(baseurl)/assets/logo.svg" /> Christoph Tittel</a>
+          <a href=◊(baseurl)/about.html>About</a>
+        </nav>
+      </header>
 
-<article>
-◊(->html doc)
-</article>
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2bd5f04371b74ad1a535bbb6b26f1c0e"}'></script>
-</body>
+      <article>
+        ◊(->html doc)
+      </article>
+      <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2bd5f04371b74ad1a535bbb6b26f1c0e"}'></script>
+    </body>
 
-<footer>
-    <div class="credits">
-    &copy; Christoph Tittel&nbsp;2020-◊(print-year)
-    <br>
-    Last built: ◊(print-datetime)
-    <br>
-    <a href=https://github.com/ctittel/ctittel.github.io/blob/main/◊(relative-source-of-file here)>Source and History of this page</a>
-  </div>  
-</footer>
+    <footer>
+        <div class="credits">
+        &copy; Christoph Tittel&nbsp;2020-◊(print-year)
+        <br>
+        Last built: ◊(print-datetime)
+        <br>
+        <a href=https://github.com/ctittel/ctittel.github.io/blob/main/◊(relative-source-of-file here)>Source and History of this page</a>
+      </div>  
+    </footer>
+  </div>
 </html>
