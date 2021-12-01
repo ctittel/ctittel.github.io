@@ -6,40 +6,15 @@
   <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
-  ◊; <link rel="stylesheet" type="text/css" href="◊(baseurl)/css/layout.css" />
   <link rel="stylesheet" type="text/css" href="◊(baseurl)/css/style.css" />
   <link rel="shortcut icon" type="image/png" href="◊(baseurl)/assets/logo.svg">
 </head>
 
 <body>
 <header>
-
-	◊; <div class="site-info">
-	◊; 	<h1 class="site-name">
-	◊; 	</h1>
-	◊; 	◊; <p class="site-description">Christoph Tittel</p>
-	◊; </div>
-
   <nav>
-  	◊; <a href="◊(baseurl)/">
-    <img id="site-avatar" src="◊(baseurl)/assets/logo.svg" />
-    ◊; </a>
-    <a href=◊(baseurl)/index.html id="site-name">Christoph Tittel</a>
+    <a href=◊(baseurl)/index.html id="site-name"><img id="site-avatar" src="◊(baseurl)/assets/logo.svg" /> Christoph Tittel</a>
     <a href=◊(baseurl)/about.html>About</a>
-    ◊; <a href="google.com">Google</a>
-    ◊; ◊(->html (apply ul (for/list ([ii (nav-sites)]) (li ii))))
-  ◊; ◊(for ([i (nav-sites)])
-  ◊;   "test"
-  ◊; )
-
-    ◊; ◊a[href=(i)]{i}
-	◊; {% for node in site.navbar %}
-	◊; 	{% if page.url == node.url %}
-	◊; 	<a class="active" href="{{node.url | prepend: site.baseurl}}">{{node.title}}</a>
-	◊; 	{% else %}
-	◊; 	<a href="{{node.url | prepend: site.baseurl}}">{{node.title}}</a>
-	◊; 	{% endif %}
-	◊; {% endfor %}
 	</nav>
 </header>
 
