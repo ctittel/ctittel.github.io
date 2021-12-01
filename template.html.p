@@ -31,7 +31,8 @@
         <br>
         Last built: ◊(print-datetime)
         <br>
-        <a href=https://github.com/ctittel/ctittel.github.io/blob/main/◊(relative-source-of-file here)>Source and History of this page</a>
+        <a href=https://github.com/ctittel/ctittel.github.io/blob/main/◊(relative-source-of-file here)>Source Code</a> and
+        <a href=https://github.com/ctittel/ctittel.github.io/commits/main/◊(relative-source-of-file here)>Version History</a> of this page
       </div>  
     </footer>
   </div>
