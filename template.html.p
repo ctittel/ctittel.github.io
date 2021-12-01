@@ -14,7 +14,8 @@
     <body>
       <header>
         <nav>
-          <a href=◊(baseurl)/index.html id="site-name"><img id="site-avatar" src="◊(baseurl)/assets/logo.svg" /> Christoph Tittel</a>
+          <a href=◊(baseurl)/index.html>
+            <img src="◊(baseurl)/assets/logo.svg" /> <b>Christoph Tittel</b></a>
           <a href=◊(baseurl)/about.html>About</a>
         </nav>
       </header>
