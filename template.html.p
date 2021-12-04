@@ -29,9 +29,9 @@
 
     <footer>
         <div class="credits">
-        &copy; Christoph Tittel&nbsp;2020-◊(print-year)
+        &copy; Christoph Tittel&nbsp;2020-◊(current-year-string)
         <br>
-        Last built: ◊(print-datetime)
+        Last built: ◊(current-datetime-string)
         <br>
         <a href=https://github.com/ctittel/ctittel.github.io/blob/main/◊(relative-source-of-file here)>Source Code</a> and
         <a href=https://github.com/ctittel/ctittel.github.io/commits/main/◊(relative-source-of-file here)>Version History</a> of this page

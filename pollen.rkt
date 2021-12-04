@@ -26,15 +26,11 @@
 
 ;; --- date & time
 ;; https://docs.racket-lang.org/gregor/time-format.html
-(define (print-year)
+(define (current-year-string)
   (~t (now) "yyyy"))
 
-(define (print-datetime)
-  (string-append (~t (now/moment) "yyyy-MM-dd kk:mm:ss") " UTC" 
-    (let ([x (~t (now/moment) "X")])
-      (if (or (eq? x "Z") (eq? x "Z "))
-        "+00"
-        x))))
+(define (current-datetime-string)
+  (string-append (~t (now/moment) "yyyy-MM-dd kk:mm:ss X")))
 ;; ---
 
 (define (heading . elements)
