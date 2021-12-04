@@ -42,7 +42,18 @@
 (define (hyperlink url elements)
   `(a [[href ,url]] ,elements))
 
-(define (relative-source-of-file file) (get-source file))
+(define (relative-file-path file) 
+    (let* (
+      [p (->path file)]
+      [dir-part (path-only p)]
+      [file-part (file-name-from-path p)]
+    )
+    (string-append 
+      "site/"
+      (if dir-part (path->string dir-part) "")
+      (if file-part (path->string (get-source file-part)) "")
+    )
+))
 
 (define (my-print-pagetree) 
   (pagetree->list (current-pagetree)))

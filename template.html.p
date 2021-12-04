@@ -9,7 +9,6 @@
   <link rel="stylesheet" type="text/css" href="◊(baseurl)/css/style.css" />
   <link rel="shortcut icon" type="image/png" href="◊(baseurl)/assets/logo.svg">
 </head>
-
   <div class="flex-wrapper">
     <body>
       <header>
@@ -33,8 +32,8 @@
         <br>
         Last built: ◊(current-datetime-string)
         <br>
-        <a href=https://github.com/ctittel/ctittel.github.io/blob/main/◊(relative-source-of-file here)>Source Code</a> and
-        <a href=https://github.com/ctittel/ctittel.github.io/commits/main/◊(relative-source-of-file here)>Version History</a> of this page
+        <a href=https://github.com/ctittel/ctittel.github.io/blob/main/◊(relative-file-path here)>Source Code</a> and
+        <a href=https://github.com/ctittel/ctittel.github.io/commits/main/◊(relative-file-path here)>Version History</a> of this page
       </div>  
     </footer>
   </div>

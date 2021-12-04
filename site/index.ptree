@@ -3,4 +3,4 @@
 index.html
 404.html
 posts.html
-posts/about.html
+◊(dynamic-require "posts.ptree" 'doc)
