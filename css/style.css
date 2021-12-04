@@ -47,6 +47,7 @@ nav img {
 /**** Body *****/
 article {
     max-width: 800px;
+    min-width: 80%;
     margin: auto auto;
     margin-top: 20px;
     line-height: 1.6;
