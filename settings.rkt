@@ -7,5 +7,5 @@
 
 (define (baseurl) 
     (if (debug-mode) 
-        (path->string (find-system-path 'orig-dir)) ;(current-directory)  
+        (string-append (path->string (find-system-path 'orig-dir)) "/site")  
         "https://ctittel.com"))

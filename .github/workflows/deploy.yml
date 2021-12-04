@@ -43,9 +43,9 @@ jobs:
         rm -r .github
         rm .gitignore
         raco pollen render -p
-        raco pollen publish . ~/build
+        raco pollen publish ./site ~/site
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
         branch: build # The branch the action should deploy to.
-        folder: ~/build # The folder the action should deploy.
+        folder: ~/site # The folder the action should deploy.
