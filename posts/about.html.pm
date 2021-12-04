@@ -1,7 +1,7 @@
 #lang pollen/markup
 ◊define-meta[title]{About}
 
-◊h2{About This Site}
+◊h1{About This Site}
 
 ◊p[#:class "blocktext"]{I have always been fascinated by the idea of having a place on the internet where I can write about my thoughts and interests.
 When the end of my masters studies approached, I decided that now is the time to start my website.

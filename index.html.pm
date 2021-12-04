@@ -1,7 +1,7 @@
 #lang pollen/markup
 ◊define-meta[title]{Index}
 
-◊h2{About Me}
+◊h1{About Me}
 ◊p[#:class "blocktext"]{
 Hi, my name is Christoph Tittel. I'm currently a Researcher at the ◊hyperlink["https://www.dfki.de/en/web/research/research-departments/plan-based-robot-control/"]{Plan-Based Robot Control group (PBR)} at DFKI (◊i{German Research Center for Artificial Intelligence}).
 I received a Master of Science from the Technical University of Munich in ◊hyperlink["https://www.tum.de/en/studies/degree-programs/detail/robotics-cognition-intelligence-master-of-science-msc/"]{Robotics, Cognition, Intelligence}, a joint program offered by the departments of Informatics, Electrical Engineering and Mechanical Engineering.

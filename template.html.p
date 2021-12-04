@@ -16,7 +16,7 @@
         <nav>
           <a href=◊(baseurl)/index.html>
             <img src="◊(baseurl)/assets/logo.svg" /> <b>Christoph Tittel</b></a>
-          <a href=◊(baseurl)/about.html>About</a>
+          <a href=◊(baseurl)/posts.html>Posts</a>
         </nav>
       </header>
 
