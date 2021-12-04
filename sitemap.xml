@@ -17,7 +17,12 @@
 </url>
 
 <url>
-<loc>https://ctittel.com/about.html</loc>
+<loc>https://ctittel.com/posts.html</loc>
+<changefreq>weekly</changefreq>
+</url>
+
+<url>
+<loc>https://ctittel.com/posts/about.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
