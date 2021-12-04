@@ -42,7 +42,7 @@ jobs:
       run: |
         rm -r .github
         rm .gitignore
-        raco pollen render -p
+        raco pollen render -p site
         raco pollen publish ./site ~/site
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@4.1.4
