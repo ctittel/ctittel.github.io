@@ -47,6 +47,15 @@ nav img {
     height: 1em;
 }
 
+.you-are-here {
+    margin-top: 0.5em;
+    color: grey;
+}
+
+.you-are-here a {
+    color: grey;
+}
+
 /**** Body *****/
 .flex-wrapper {
     max-width: 1000px;
