@@ -42,17 +42,46 @@
 (define (hyperlink url elements)
   `(a [[href ,url]] ,elements))
 
+(define (quicklink url)
+  `(a [[href ,url]] ,url))
+
 (define (relative-file-path file) 
     (let* (
       [p (->path file)]
       [dir-part (path-only p)]
       [file-part (file-name-from-path p)]
     )
-    (string-append 
-      "site/"
+    (string-append
+      ""
       (if dir-part (path->string dir-part) "")
       (if file-part (path->string (get-source file-part)) "")
     )
+))
+
+(define (path-element-strings file)
+  (let* ([p (->path file)])
+    (map path->string (explode-path p))
+))
+
+(define (reduce fn lat current-sum)
+  (cond
+    ([null? lat] current-sum)
+    (else
+     (reduce fn (cdr lat) (fn current-sum (car lat))))))
+
+(define (path-element-path-strings file)
+  (cdr
+      (let* ([path-eles (path-element-strings file)])
+        (reduce 
+          (lambda (total current)
+            (append total 
+                    (list 
+                        (string-append  (last total) 
+                                        "/" 
+                                        current))))
+          path-eles
+          '("")
+    ))
 ))
 
 (define (my-print-pagetree) 

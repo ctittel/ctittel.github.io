@@ -11,12 +11,23 @@
 </head>
   <div class="flex-wrapper">
     <body>
+
       <header>
         <nav>
           <a href=◊(baseurl)/index.html>
             <img src="◊(baseurl)/assets/logo.svg" /> <b>Christoph Tittel</b></a>
           <a href=◊(baseurl)/posts.html>Posts</a>
         </nav>
+
+      ◊(require racket/string)
+      
+      <div class="you-are-here">
+        You are here: <a href=◊(baseurl)>ctittel.com</a>
+        ◊(apply string-append (map 
+                                (lambda (x) (string-append " -> " x)) 
+                                (path-element-strings here)))
+      </div>
+
       </header>
 
       <article>
@@ -32,8 +43,8 @@
         <br>
         Last built: ◊(current-datetime-string)
         <br>
-        <a href=https://github.com/ctittel/ctittel.github.io/blob/main/◊(relative-file-path here)>Source Code</a> and
-        <a href=https://github.com/ctittel/ctittel.github.io/commits/main/◊(relative-file-path here)>Version History</a> of this page
+        <a href=https://github.com/ctittel/ctittel.github.io/blob/main/site/◊(relative-file-path here)>Source Code</a> and
+        <a href=https://github.com/ctittel/ctittel.github.io/commits/main/site/◊(relative-file-path here)>Version History</a> of this page
       </div>  
     </footer>
   </div>
