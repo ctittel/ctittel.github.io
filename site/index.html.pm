@@ -1,9 +1,17 @@
 #lang pollen/markup
 ◊define-meta[title]{Index}
 
+◊h1{News}
+2022-06-01
+◊p[#:class "blocktext"]{
+I have left DFKI and now work as a software developer at Siemens in Stuttgart.
+}
+
 ◊h1{About Me}
 ◊p[#:class "blocktext"]{
-Hi, my name is Christoph Tittel. I'm currently a Researcher at the ◊hyperlink["https://www.dfki.de/en/web/research/research-departments/plan-based-robot-control/"]{Plan-Based Robot Control group (PBR)} at DFKI (◊i{German Research Center for Artificial Intelligence}).
+Hi, my name is Christoph Tittel.
+I currently work as a software developer at Siemens in Stuttgart where I am part of a team that contributes to the software for SINUMERIK CNC controls.
+Before that I worked as a researcher in the ◊hyperlink["https://www.dfki.de/en/web/research/research-departments/plan-based-robot-control/"]{Plan-Based Robot Control group (PBR)} at DFKI (◊i{German Research Center for Artificial Intelligence}) in Osnabrück for one year.
 I received a Master of Science from the Technical University of Munich in ◊hyperlink["https://www.tum.de/en/studies/degree-programs/detail/robotics-cognition-intelligence-master-of-science-msc/"]{Robotics, Cognition, Intelligence}, a joint program offered by the departments of Informatics, Electrical Engineering and Mechanical Engineering.
 As the name of the program might suggest, it was focused primarily on the computer science side of things.
 Before that, I received a Bachelor's in Mechatronics from the Technische Hochschule Nürnberg. My Bachelor studies were organized in the form of a dual studies program (◊i{Verbundstudium}) in cooperation with Siemens and included a practical training and internships in cooperation with the conglomerate Siemens.
