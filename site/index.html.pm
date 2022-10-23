@@ -1,12 +1,6 @@
 #lang pollen/markup
 ◊define-meta[title]{Index}
 
-◊h1{News}
-2022-06-01
-◊p[#:class "blocktext"]{
-I have left DFKI and now work as a software developer at Siemens in Stuttgart.
-}
-
 ◊h1{About Me}
 ◊p[#:class "blocktext"]{
 Hi, my name is Christoph Tittel.
