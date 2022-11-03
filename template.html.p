@@ -33,8 +33,6 @@
       <article>
         ◊(->html doc)
       </article>
-
-      <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2bd5f04371b74ad1a535bbb6b26f1c0e"}'></script>
     </body>
 
     <footer>
